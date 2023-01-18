@@ -1,0 +1,28 @@
+@media screen and (max-width:650px) {
+    @import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+    .conteudo{
+        width: 320px;
+        height: 360px;
+    }
+
+    .numbers{
+        gap: 16px;
+    }
+
+    .text > p{
+        font-size: 10pt;
+        width: 300px;
+    }
+
+    .conteudo > .cartao-frente > .button > button{
+        width: 280px;
+    }
+    #invalid{
+        display: none;
+        margin: 10px 0px 0px 10px;
+        font-weight: 600;
+        color: rgba(252, 59, 59, 0.778);
+        font-size: 10pt;
+    }
+}

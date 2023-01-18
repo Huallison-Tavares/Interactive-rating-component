@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+:root{
+    --primary:hsla(216, 12%, 54%, 0.167);
+    --fundo:hsl(216, 12%, 8%);
+    --secundary: #ff8c00;
+    --font:white;
+}
+
+body{
+    background-color: var(--fundo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+.conteudo{
+    background-image: linear-gradient(rgb(18, 26, 37), rgb(27, 39, 54), rgb(33, 42, 53));;
+    width: 370px;
+    height: 370px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px black;
+}
+
+.cartao-frente#visibility,
+.cartao-tras#visibility{
+    margin: 0px 20px 0px 20px;
+    display:flex;
+    flex-direction: column;
+}
+
+.cartao-frente,
+.cartao-tras{
+    display:none;
+}
+
+.cartao-tras > .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartao-tras > .info > h1{
+    margin-bottom: 0;
+    font-size: 18pt;
+    color: var(--font);
+}
+
+.cartao-tras > .info > p#text{
+    font-size: 11pt;
+    color: hsla(217, 12%, 63%, 0.623);
+    text-align: center;
+}
+
+.cartao-tras > .info > p#span{
+    height: 30px;
+    width: 185px;
+    margin-top: 30px;
+    border-radius: 20px;
+    font-size: 11pt;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(217, 12%, 63%, 0.155);
+    color: var(--secundary);
+    box-shadow: 3px 3px 10px black;
+}
+
+.numbers{
+    display: flex;
+    gap: 26px;
+    flex-direction: row;
+    height: 80px;
+}
+
+.numbers > p{
+    background-color: var(--primary);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    color: hsl(217, 12%, 63%);
+    box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.742);
+    transition: all 0.7s;
+    font-weight: 700;
+}
+
+.numbers > p#select{
+    background-color: hsl(217, 12%, 63%);
+    color: var(--font);
+}
+
+.numbers > p:hover{
+    background-color: var(--secundary);
+    color: var(--font);
+    width: 50px;
+    height: 50px;
+}
+
+.star{
+    background-color: var(--primary);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.text > h1{
+    color: var(--font);
+    font-size: 18pt;
+    margin-top: 30px;
+}
+
+.text > p{
+    color: hsl(216, 12%, 54%);
+    font-size: 11pt;
+    
+}
+
+.conteudo > .cartao-frente > .button > button{
+    width: 320px;
+    height: 40px;
+    margin: 10px 0px 0px 0px;
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border: none;
+    background-color: var(--secundary);
+    color: var(--font);
+    box-shadow: 3px 5px 6px #734400;
+    transition: all 0.4s;
+}
+
+.conteudo > .cartao-frente > .button > button:hover{
+    position:relative;
+    height: 42px;
+    background-color: var(--font);
+    color: var(--secundary);
+    box-shadow: 3px 5px 6px rgba(255, 255, 255, 0.426);
+}
+
+.conteudo .cartao-frente .button{
+    width: 320px;
+    height: 50px;
+}
+
+#invalid{
+    display: none;
+    margin: 10px 0px 0px 10px;
+    font-weight: 600;
+    color: rgba(252, 59, 59, 0.778);
+}

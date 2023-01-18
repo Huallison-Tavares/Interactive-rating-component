@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive rating component</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="icon" href="./images/favicon-32x32.png">
+</head>
+<body>  
+    <main class="conteudo">
+        <div class="cartao-frente"  id="visibility">
+            <div class="star">
+                <img src="./images/icon-star.svg" alt="star">
+            </div>
+            <div class="text">
+                <h1>How did we do?</h1>
+                <p>Please let us know how we did with your support request. All feedback is appreciated
+                    to help us improve our offering!</p>
+            </div>
+            <div class="numbers">
+                <p class="num">1</p>
+                <p class="num">2</p>
+                <p class="num">3</p>
+                <p class="num">4</p>
+                <p class="num">5</p>
+            </div>
+            <div class="button"><button onclick="proxPage()">SUBMIT</button></div>
+            <p id="invalid">Invalid value</p>
+        </div>
+
+        <div class="cartao-tras">
+            <div class="info">
+                <img src="images/illustration-thank-you.svg" alt="tank-you">
+                <p id="span">You selected 0 out of 5</p>
+                <h1>Thank you!</h1>
+                <p id="text">We appreciate you taking the time to give a rating. If you ever need more support,
+                    don’t hesitate to get in touch!</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="styles/index.js"></script>
+</body>
+</html>
